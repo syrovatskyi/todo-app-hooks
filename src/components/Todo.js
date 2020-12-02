@@ -37,16 +37,16 @@ function Todo({
         {todo.text}
       </div>
       <div className="icons">
-        <RiCloseCircleLine 
-          onClick={() => removeTodo(todo.id)}
-          className="delete-icon"
-        />
-        <TiEdit 
+      <TiEdit 
           onClick={() => setEdit({
             id: todo.id,
             value: todo.text
           })}
           className="edit-icon"
+        />
+        <RiCloseCircleLine 
+          onClick={() => removeTodo(todo.id)}
+          className="delete-icon"
         />
       </div>
     </div>
