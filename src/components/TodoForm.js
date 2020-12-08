@@ -7,7 +7,9 @@ function TodoForm(props) {
   const inputRef = useRef(null)
 
   useEffect(() => {
-    inputRef.current.focus()
+    if(inputRef.current) {
+      inputRef.current.focus()
+    }
   })
 
   const handleChange = e => {
@@ -41,6 +43,7 @@ function TodoForm(props) {
           className="todo-input edit"
           onChange={handleChange}
           ref={inputRef}
+          id="1"
         />
 
         <button className="todo-button edit">
