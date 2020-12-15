@@ -16,7 +16,6 @@ body {
 .todo-app {
   display: flex;
   flex-direction: column;
-  /* justify-content: start; */
   width: 520px;
   min-height: 600px;
   background: #161a2b;
@@ -99,7 +98,7 @@ h1 {
   color: #fff;
   background: linear-gradient(
     90deg,
-    rgba(255, 118, 20, 1) 0%,
+    rgb(248, 125, 36) 0%,
     rgba(255, 84, 17, 1) 100%
   );
 
