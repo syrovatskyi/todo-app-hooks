@@ -59,11 +59,6 @@ function TodoEdit({ todo, handleEdit }) {
       }>
         Update
       </button>
-
-
-
-
-
     </form>
   )
 }
